@@ -3,223 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treiaco | Soluciones constructivas</title>
+    <title>Treiaco | Actividades principales</title>
     <meta
       name="description"
-      content="Treiaco brinda soluciones constructivas para la industria con obras civiles, mantenimiento industrial y movimiento de suelo."
+      content="Treiaco brinda soluciones constructivas para la industria: pulido de hormigón, pisos industriales, impermeabilización, refacción y obra nueva."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="page">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Treiaco inicio">
+        <span class="brand-mark">TR</span>
+        <span>
+          <strong>Treiaco</strong>
+          <small>Soluciones constructivas</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#actividades">Actividades</a>
+        <a href="#obras">Obras civiles</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
       <section class="hero" id="inicio">
-        <div class="hero-bg"></div>
-
-        <header class="hero-topbar">
-          <a class="brand" href="#inicio" aria-label="Treiaco inicio">
-            <span class="brand-mark">TR</span>
-            <span class="brand-copy">
-              <strong>Treiaco</strong>
-              <small>Soluciones constructivas</small>
-            </span>
-          </a>
-
-          <div class="hero-contact">
-            <a href="tel:+5491133680146">+54 9 11 3368-0146</a>
-            <a href="mailto:info@treiaco.com">info@treiaco.com</a>
-          </div>
-        </header>
-
         <div class="hero-content">
-          <div class="hero-copy">
-            <p class="eyebrow">Industria, servicios y obras</p>
-            <h1>SOLUCIONES CONSTRUCTIVAS PARA LA INDUSTRIA</h1>
-            <a class="button" href="#servicios">Ver servicios</a>
+          <p class="eyebrow">Treiaco Vial</p>
+          <h1>Actividades principales</h1>
+          <p>
+            Somos una empresa dedicada a brindar un sistema integral de soluciones constructivas al
+            servicio de la industria.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#actividades">Ver actividades</a>
+            <a class="button button-secondary" href="https://wa.me/5491133680146" target="_blank" rel="noreferrer">
+              Consultar por WhatsApp
+            </a>
           </div>
-
-          <nav class="hero-side-nav" aria-label="Accesos principales">
-            <a href="#servicios">SERVICIOS</a>
-            <a href="#obras-civiles">OBRAS CIVILES</a>
-            <a href="#mantenimiento-industrial">MANTENIMIENTO INDUSTRIAL</a>
-            <a href="#movimiento-suelo">MOVIMIENTO DE SUELO</a>
-            <a href="#proceso">PROCESO</a>
-            <a href="#contacto">CONTACTO</a>
-          </nav>
         </div>
+
+        <nav class="hero-menu" aria-label="Actividades destacadas">
+          <a href="#pulido">Pulido de hormigón</a>
+          <a href="#pisos">Pisos industriales</a>
+          <a href="#impermeabilizacion">Impermeabilización</a>
+          <a href="#obras">Obras civiles e industriales</a>
+        </nav>
       </section>
 
-      <section class="intro-block">
-        <div class="section-label">
+      <section class="intro">
+        <div class="section-title">
           <span></span>
-          <p>SOBRE NOSOTROS</p>
+          <div>
+            <p>Servicios</p>
+            <h2>Una página simple para mostrar lo que hacemos.</h2>
+          </div>
         </div>
-        <h2>Obras civiles e industriales con sólida experiencia en el mercado nacional.</h2>
-        <p class="intro-text">
-          Somos una empresa dedicada a brindar un sistema integral de soluciones constructivas al
-          servicio de la industria.
+        <p>
+          Con sólida experiencia en el mercado nacional, nos especializamos en desarrollo de
+          proyectos y ejecución de trabajos civiles e industriales.
         </p>
       </section>
 
-      <section class="service-catalog" id="servicios">
-        <article class="catalog-item" id="obras-civiles">
-          <div class="catalog-media catalog-media--civil" aria-hidden="true"></div>
-          <div class="catalog-body">
-            <div class="section-label">
-              <span></span>
-              <p>OBRAS CIVILES</p>
-            </div>
-            <h3>Obras de hormigón armado para proyectos públicos y privados.</h3>
-            <ul class="catalog-links">
-              <li>Estructuras de hormigón armado</li>
-              <li>Pisos alisados</li>
-              <li>Pavimentos</li>
-              <li>Demoliciones</li>
+      <section class="activities" id="actividades">
+        <article class="activity-card" id="pulido">
+          <div class="activity-media activity-media-pulido"></div>
+          <div class="activity-body">
+            <p class="number">01</p>
+            <h3>Pulido de hormigón</h3>
+            <ul>
+              <li>Pulido de pisos de hormigón.</li>
+              <li>Restauración y pulido de pisos de hormigón y mosaico.</li>
             </ul>
-            <p>
-              Amplia experiencia en la ejecución de proyectos de construcción civil, con
-              equipamiento y personal capacitado.
-            </p>
-            <a class="inline-link" href="#contacto">Consultar servicio</a>
           </div>
         </article>
 
-        <article class="catalog-item" id="mantenimiento-industrial">
-          <div class="catalog-media catalog-media--industrial" aria-hidden="true"></div>
-          <div class="catalog-body">
-            <div class="section-label">
-              <span></span>
-              <p>MANTENIMIENTO INDUSTRIAL</p>
-            </div>
-            <h3>Mantenimiento edilicio y ampliaciones para la industria.</h3>
-            <ul class="catalog-links">
-              <li>Mantenimiento edilicio</li>
-              <li>Pisos industriales de hormigón, poliuretánicos y epóxicos</li>
-              <li>Impermeabilizaciones y pintura de edificios</li>
-              <li>Estructuras metálicas, galpones y tinglados</li>
+        <article class="activity-card" id="pisos">
+          <div class="activity-media activity-media-pisos"></div>
+          <div class="activity-body">
+            <p class="number">02</p>
+            <h3>Pisos industriales</h3>
+            <ul>
+              <li>Pisos de hormigón alisado.</li>
+              <li>Pisos epoxi y poliuretánicos.</li>
+              <li>Pisos decorativos.</li>
             </ul>
-            <p>
-              Soluciones para mantenimiento, refacciones, estructuras metálicas y pisos
-              industriales.
-            </p>
-            <a class="inline-link" href="#contacto">Consultar servicio</a>
           </div>
         </article>
 
-        <article class="catalog-item" id="movimiento-suelo">
-          <div class="catalog-media catalog-media--soil" aria-hidden="true"></div>
-          <div class="catalog-body">
-            <div class="section-label">
-              <span></span>
-              <p>MOVIMIENTO DE SUELO</p>
-            </div>
-            <h3>Flota de maquinaria pesada para movimiento de suelo y demoliciones.</h3>
-            <ul class="catalog-links">
-              <li>Zanjeos</li>
-              <li>Desmontes</li>
-              <li>Excavaciones y rellenos</li>
-              <li>Compactación de suelos</li>
+        <article class="activity-card" id="impermeabilizacion">
+          <div class="activity-media activity-media-imper"></div>
+          <div class="activity-body">
+            <p class="number">03</p>
+            <h3>Impermeabilización</h3>
+            <ul>
+              <li>Impermeabilización de techos, frentes y medianeras.</li>
+              <li>Tanques y sótanos.</li>
             </ul>
-            <p>Zanjeos, desmontes, excavaciones, rellenos y compactación de suelos.</p>
-            <a class="inline-link" href="#contacto">Consultar servicio</a>
           </div>
         </article>
       </section>
 
-      <section class="highlight-band">
-        <article class="highlight-card">
-          <div class="section-label">
-            <span></span>
-            <p>CLIENTES</p>
-          </div>
-          <h2>Empresas industriales, de servicios y comerciales.</h2>
-          <p>
-            Nuestros principales clientes depositan la confianza de concretar sus proyectos con
-            calidad y en los plazos asumidos.
-          </p>
-        </article>
-
-        <article class="highlight-stats">
-          <div>
-            <strong>+25 años</strong>
-            <span>de experiencia en el mercado nacional</span>
-          </div>
-          <div>
-            <strong>+50 proyectos</strong>
-            <span>exitosos en obra civil e industrial</span>
-          </div>
-          <div>
-            <strong>Trabajo calificado</strong>
-            <span>equipos preparados para ejecución y mantenimiento</span>
-          </div>
-        </article>
-      </section>
-
-      <section class="process-strip" id="proceso">
-        <div class="section-label">
+      <section class="civil-works" id="obras">
+        <div class="section-title">
           <span></span>
-          <p>NUESTRO PROCESO</p>
+          <div>
+            <p>Obras civiles e industriales</p>
+            <h2>Refacción y obra nueva.</h2>
+          </div>
         </div>
-        <h2>Desarrollamos una planificación detallada en cada etapa de la obra.</h2>
-        <p class="intro-text">Planificamos, diseñamos, construimos y entregamos.</p>
 
-        <div class="process-grid">
-          <article>
-            <span>01</span>
-            <h3>Planificamos</h3>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Diseñamos</h3>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Construimos</h3>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Entregamos</h3>
-          </article>
+        <div class="work-list">
+          <span>Refacción y obra nueva</span>
+          <span>Durlock</span>
+          <span>Pintura</span>
+          <span>Electricidad</span>
+          <span>Herrería</span>
+          <span>Sanitaria</span>
         </div>
       </section>
 
-      <section class="about-contact">
-        <article class="about-panel" id="nosotros">
-          <div class="section-label">
-            <span></span>
-            <p>SOBRE TREIACO</p>
-          </div>
-          <h2>Un sistema integral de soluciones constructivas.</h2>
-          <p>
-            Los valores en los que creemos están orientados a generar un vínculo de confianza con
-            cada uno de nuestros clientes.
-          </p>
-        </article>
+      <section class="trust">
+        <div>
+          <strong>+25 años</strong>
+          <span>de experiencia en el mercado nacional</span>
+        </div>
+        <div>
+          <strong>+50 proyectos</strong>
+          <span>exitosos en obras civiles e industriales</span>
+        </div>
+        <div>
+          <strong>Calidad y plazos</strong>
+          <span>trabajos planificados para empresas industriales, de servicios y comerciales</span>
+        </div>
+      </section>
 
-        <article class="contact-panel" id="contacto">
-          <div class="section-label">
+      <section class="contact" id="contacto">
+        <div class="contact-copy">
+          <div class="section-title">
             <span></span>
-            <p>CONTACTO</p>
+            <div>
+              <p>Contacto</p>
+              <h2>Concretá tu proyecto con Treiaco.</h2>
+            </div>
           </div>
-          <h2>Contacto</h2>
+          <p>
+            Nuestros clientes depositan la confianza de concretar sus proyectos con calidad y en
+            los plazos asumidos.
+          </p>
+        </div>
+
+        <div class="contact-card">
           <a href="tel:+5491133680146">+54 9 11 3368-0146</a>
           <a href="mailto:info@treiaco.com">info@treiaco.com</a>
           <p>Espacio Nova, local 9, Perito Moreno 1155, Ezeiza, Buenos Aires.</p>
-          <div class="contact-actions">
-            <a class="button" href="https://wa.me/5491133680146" target="_blank" rel="noreferrer">
-              WhatsApp
-            </a>
-            <a class="button button--secondary" href="mailto:info@treiaco.com">Email</a>
-          </div>
-        </article>
+          <a class="button" href="https://wa.me/5491133680146" target="_blank" rel="noreferrer">
+            Escribir por WhatsApp
+          </a>
+        </div>
       </section>
     </main>
-
-    <script src="./script.js"></script>
   </body>
 </html>
