@@ -329,8 +329,19 @@ ul {
 }
 
 .work-photos figcaption {
+  display: grid;
+  gap: 4px;
   padding: 12px 14px;
+}
+
+.work-photos figcaption strong {
   font-weight: 700;
+}
+
+.work-photos figcaption span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
 }
 
 .trust {
