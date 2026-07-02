@@ -84,6 +84,9 @@
               <li>Pulido de pisos de hormigón.</li>
               <li>Restauración y pulido de pisos de hormigón y mosaico.</li>
             </ul>
+            <button class="detail-button" type="button" data-service="pulido">
+              Detalle del servicio
+            </button>
           </div>
         </article>
 
@@ -99,6 +102,9 @@
               <li>Pisos epoxi y poliuretánicos.</li>
               <li>Pisos decorativos.</li>
             </ul>
+            <button class="detail-button" type="button" data-service="pisos">
+              Detalle del servicio
+            </button>
           </div>
         </article>
 
@@ -113,6 +119,9 @@
               <li>Impermeabilización de techos, frentes y medianeras.</li>
               <li>Tanques y sótanos.</li>
             </ul>
+            <button class="detail-button" type="button" data-service="impermeabilizacion">
+              Detalle del servicio
+            </button>
           </div>
         </article>
       </section>
@@ -127,12 +136,30 @@
         </div>
 
         <div class="work-list">
-          <span>Refacción y obra nueva</span>
-          <span>Durlock</span>
-          <span>Pintura</span>
-          <span>Electricidad</span>
-          <span>Herrería</span>
-          <span>Sanitaria</span>
+          <details>
+            <summary>Refacción y obra nueva</summary>
+            <p>Intervenciones en espacios existentes, ampliaciones y ejecución de obra desde cero.</p>
+          </details>
+          <details>
+            <summary>Durlock</summary>
+            <p>Tabiques, cielorrasos, revestimientos y soluciones en seco para interiores.</p>
+          </details>
+          <details>
+            <summary>Pintura</summary>
+            <p>Terminaciones interiores y exteriores para obra nueva, mantenimiento y refacción.</p>
+          </details>
+          <details>
+            <summary>Electricidad</summary>
+            <p>Instalaciones y adecuaciones eléctricas para locales, edificios y espacios industriales.</p>
+          </details>
+          <details>
+            <summary>Herrería</summary>
+            <p>Estructuras, reparaciones y trabajos metálicos complementarios a la obra.</p>
+          </details>
+          <details>
+            <summary>Sanitaria</summary>
+            <p>Instalaciones y reparaciones sanitarias para obras civiles, comerciales e industriales.</p>
+          </details>
         </div>
 
         <div class="work-photos" aria-label="Trabajos de obra civil e industrial">
@@ -200,5 +227,20 @@
         </div>
       </section>
     </main>
+
+    <dialog class="service-modal" id="service-modal" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <button class="modal-close" type="button" aria-label="Cerrar detalle">×</button>
+        <p class="modal-kicker" id="modal-kicker"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <ul id="modal-list"></ul>
+        <a class="button" id="modal-action" href="https://wa.me/5491133680146" target="_blank" rel="noreferrer">
+          Consultar servicio
+        </a>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
   </body>
 </html>
