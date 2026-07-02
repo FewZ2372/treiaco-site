@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -104,7 +109,7 @@ h3,
   background:
     linear-gradient(90deg, rgba(16, 19, 21, 0.72), rgba(16, 19, 21, 0.46)),
     linear-gradient(180deg, rgba(16, 19, 21, 0.1), rgba(16, 19, 21, 0.72)),
-    url("https://treiaco.com.ar/img/bk.png") center / cover,
+    url("./assets/images/hero-industrial-floor.jpg") center / cover,
     linear-gradient(135deg, #9a9c98, #5f6464);
 }
 
@@ -246,26 +251,13 @@ h2 {
 
 .activity-media {
   min-height: 190px;
-  background-size: cover;
-  background-position: center;
+  background: #d9d9d4;
 }
 
-.activity-media-pulido {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.35)),
-    linear-gradient(135deg, #cdd1d0, #777f83);
-}
-
-.activity-media-pisos {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.35)),
-    linear-gradient(135deg, #c9c0b4, #4f5559);
-}
-
-.activity-media-imper {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.35)),
-    linear-gradient(135deg, #d8d8d0, #74736b);
+.activity-media img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 .activity-body {
@@ -311,6 +303,33 @@ ul {
   padding: 16px 18px;
   border-left: 5px solid var(--orange);
   background: var(--white);
+  font-weight: 700;
+}
+
+.work-photos {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.work-photos figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.work-photos img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.work-photos figcaption {
+  padding: 12px 14px;
   font-weight: 700;
 }
 
@@ -402,7 +421,8 @@ ul {
   }
 
   .activities,
-  .trust {
+  .trust,
+  .work-photos {
     grid-template-columns: 1fr;
   }
 
